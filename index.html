@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadget Data Analytics Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gadget Data Analytics Dashboard</h1>
+        
+        <div class="controls">
+            <label>Select Metrics:</label>
+            <input type="checkbox" id="movingAvg" checked> Moving Average
+            <input type="checkbox" id="volatility" checked> Volatility
+            <input type="checkbox" id="rsi" checked> RSI
+            <button onclick="generateRandomData()">Generate Data</button>
+        </div>
+
+        <canvas id="chart"></canvas>
+
+        <div id="metrics">
+            <h2>Calculated Metrics</h2>
+            <p id="movingAvgValue"></p>
+            <p id="volatilityValue"></p>
+
+            <p id="rsiValue"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
